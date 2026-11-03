@@ -145,6 +145,8 @@ section{padding:80px clamp(16px,5vw,80px)}
 .cta-btn{display:inline-flex;align-items:center;gap:8px;background:#fff;color:var(--main);border:none;border-radius:10px;padding:16px 36px;font-family:'Zen Maru Gothic',sans-serif;font-weight:700;font-size:16px;cursor:pointer;transition:.2s;text-decoration:none}
 .cta-btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,0.2)}
 .cta-note{font-size:12px;color:rgba(255,255,255,0.6);margin-top:16px}
+.cta-levelup{list-style:none;padding:0;margin:0 auto 24px;display:flex;flex-wrap:wrap;justify-content:center;gap:8px;max-width:640px}
+.cta-levelup li{background:rgba(255,255,255,0.15);color:#fff;border-radius:999px;padding:6px 14px;font-size:14px;font-weight:700}
 
 /* SERIES */
 .series{background:var(--page-bg);padding:64px clamp(16px,5vw,80px)}
@@ -261,7 +263,7 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px clamp(16p
     <div class="pain-card fade-in">
       <span class="pain-emoji">😰</span>
       <p class="pain-q">入稿データの作り方が<br>わからなくて不安</p>
-      <p class="pain-a">塗り足し・トンボ・ノド設定は全自動。「出力ボタンを押すだけ」で印刷所に出せるデータが完成します。</p>
+      <p class="pain-a">塗り足し・ノド設定は全自動。「出力ボタンを押すだけ」で印刷所に出せるデータが完成します。</p>
     </div>
     <div class="pain-card fade-in">
       <span class="pain-emoji">💸</span>
@@ -303,6 +305,11 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px clamp(16p
       <div class="feature-icon">✨</div>
       <p class="feature-title">自動テキスト整形エンジン</p>
       <p class="feature-desc">「！？」を⁉に変換、2桁数字を縦中横に——プロの組版ルールを自動で適用します。</p>
+    </div>
+    <div class="feature-card fade-in">
+      <div class="feature-icon">🔤</div>
+      <p class="feature-title">ルビ・傍点</p>
+      <p class="feature-desc">｜銀河鉄道《ぎんがてつどう》でルビ、《《ほんとう》》で傍点。Web小説と同じ書き方でそのまま入稿データに。</p>
     </div>
     <div class="feature-card fade-in">
       <div class="feature-icon">📄</div>
@@ -400,8 +407,18 @@ footer{background:#fff;border-top:1px solid var(--border);padding:32px clamp(16p
 
 <!-- CTA -->
 <section class="cta-section" id="cta">
-  <h2 class="section-title fade-in">正式公開！</h2>
-  <p class="section-sub fade-in">字書きさんのために、ぜんぶラクにします。</p>
+  <h2 class="section-title fade-in">公開から5ヶ月、<br><span style="display:inline-block">ここまで</span><span style="display:inline-block">できるようになりました</span></h2>
+  <ul class="cta-levelup fade-in">
+    <li>縦書きの行末がきれいに揃うように</li>
+    <li>句読点のぶら下がり組みに対応</li>
+    <li>小書き文字（っ・ぃ）や縦中横の字送りを調整</li>
+    <li>ルビ・傍点に対応</li>
+    <li>B6サイズを追加</li>
+    <li>A5の二段組みに対応</li>
+    <li>PC・タブレットで見開きプレビュー</li>
+    <li>表紙作成アプリ RakuNovelCover と連携</li>
+  </ul>
+  <p class="section-sub fade-in">これからも、字書きさんのためにラクを増やしていきます。</p>
   <a href="https://rakunovel.vercel.app/" class="cta-btn fade-in">📚 アプリを使ってみる</a>
 <p class="cta-note">最新情報は <a href="https://x.com/mimilydesign" target="_blank" style="color:rgba(255,255,255,0.8)">@mimilydesign</a> でお知らせします。</p>
 </section>
